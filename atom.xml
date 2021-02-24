@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://flybiubiu.github.io</id>
     <title>Gridea</title>
-    <updated>2021-02-24T13:14:35.338Z</updated>
+    <updated>2021-02-24T13:59:52.859Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://flybiubiu.github.io"/>
     <link rel="self" href="https://flybiubiu.github.io/atom.xml"/>
@@ -18,16 +18,33 @@
         <updated>2021-02-24T13:01:09.000Z</updated>
         <content type="html"><![CDATA[<p>2020-2-24<br>
 1.TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution(做不了)<br>
+pytorch-0.3.1<br>
+an NVIDIA 1080TI GPU<br>
 github:https://github.com/YapengTian/TDAN-VSR-CVPR-2020<br>
 ps:<br>
 由于pytorch-0.3.1 做不了<br>
 2.Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution.(可以尝试)<br>
+PyTorch &gt;= 1.1<br>
+(一张Nvidia Titan XP GPU.)<br>
 github:https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020<br>
 ps:<br>
 由于之前接触过一点点这个项目, 里面有一个可变形模块DCNv2。当时这个模块需要pytorch-1.4<br>
 借用的是https://github.com/CharlesShang/DCNv2<br>
 后来有人改进了这个模块可以在3090上编译https://github.com/MatthewHowe/DCNv2(可以试试)<br>
-3.</p>
+3.Video Super-resolution with Temporal Group Attention (TGA)(可以尝试)<br>
+PyTorch 1.1<br>
+(8 Nvidia Tesla V100 GPUs)<br>
+github:https://github.com/junpan19/VSR_TGA<br>
+ps:<br>
+8块v100，不知道一块3090会跑几天<br>
+4.Space-Time-Aware Multi-Resolution Video Enhancement(可以尝试)<br>
+PyTorch &gt;= 1.0.0<br>
+NVIDIA Tesla V100 GPUs(具体不知道几块v100)<br>
+github:https://github.com/alterzero/STARnet<br>
+5.FISR: Deep Joint Frame Interpolation and Super-Resolution with A Multi-scale Temporal Loss（做不了）<br>
+Tensorflow 1.13<br>
+NVIDIA TITAN Xp GPU<br>
+github:https://github.com/JihyongOh/FISR</p>
 ]]></content>
     </entry>
 </feed>
