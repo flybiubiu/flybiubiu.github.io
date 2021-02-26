@@ -9,7 +9,7 @@
 <meta name="description" content="Workhard!">
 <meta name="theme-color" content="#000">
 <title>Gridea</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1614188928731">
+<link rel="shortcut icon" href="/favicon.ico?v=1614362733044">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -318,12 +318,12 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>3<span class="language" data-lan="minute">分钟</span></span>
+      <span>4<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>421<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>562<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -349,7 +349,7 @@
             
             
               <p><p>2020-2-24<br>
-1.TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution(做不了)<br>
+*1.TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution(做不了)<br>
 pytorch-0.3.1<br>
 
                 
@@ -620,50 +620,57 @@ pytorch-0.3.1<br>
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://flybiubiu.github.io/post/shi-pin-chao-fen-bian-lu-de-zhun-bei-gong-zuo/"" data-c="
           &lt;p&gt;2020-2-24&lt;br&gt;
-1.TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution(做不了)&lt;br&gt;
+*1.TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution(做不了)&lt;br&gt;
 pytorch-0.3.1&lt;br&gt;
 an NVIDIA 1080TI GPU&lt;br&gt;
 github:https://github.com/YapengTian/TDAN-VSR-CVPR-2020&lt;br&gt;
 ps:&lt;br&gt;
 由于pytorch-0.3.1 做不了&lt;br&gt;
-2.Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution.(可以尝试)&lt;br&gt;
+*2.Zooming Slow-Mo: Fast and Accurate One-Stage Space-Time Video Super-Resolution.(尝试失败, 3090不支持pytorch1.4,导致里面的DCNv2版本没法编译)&lt;br&gt;
 PyTorch &amp;gt;= 1.1&lt;br&gt;
 (一张Nvidia Titan XP GPU.)&lt;br&gt;
 github:https://github.com/Mukosame/Zooming-Slow-Mo-CVPR-2020&lt;br&gt;
 ps:&lt;br&gt;
 由于之前接触过一点点这个项目, 里面有一个可变形模块DCNv2。当时这个模块需要pytorch-1.4&lt;br&gt;
 借用的是https://github.com/CharlesShang/DCNv2&lt;br&gt;
-后来有人改进了这个模块可以在3090上编译https://github.com/MatthewHowe/DCNv2(可以试试)&lt;br&gt;
-3.Video Super-resolution with Temporal Group Attention (TGA)(可以尝试)(先看论文)&lt;br&gt;
+后来有人改进了这个模块可以在3090上编译https://github.com/MatthewHowe/DCNv2(失败)&lt;br&gt;
+*3.Video Super-resolution with Temporal Group Attention (TGA)(不能)(先看论文)&lt;br&gt;
 PyTorch 1.1&lt;br&gt;
 (8 Nvidia Tesla V100 GPUs)&lt;br&gt;
 github:https://github.com/junpan19/VSR_TGA&lt;br&gt;
 ps:&lt;br&gt;
 8块v100，不知道一块3090会跑几天&lt;br&gt;
-4.Space-Time-Aware Multi-Resolution Video Enhancement(可以尝试)(数据集特别大)&lt;br&gt;
+RuntimeError: CUDA out of memory. Tried to allocate 648.00 MiB (GPU 0; 23.70 GiB total capacity; 21.72 GiB already allocated; 169.25 MiB free; 22.17 GiB reserved in total by PyTorch)&lt;br&gt;
+*4.Space-Time-Aware Multi-Resolution Video Enhancement(显存不够)(数据集特别大)&lt;br&gt;
 PyTorch &amp;gt;= 1.0.0&lt;br&gt;
 NVIDIA Tesla V100 GPUs(具体不知道几块v100)&lt;br&gt;
 github:https://github.com/alterzero/STARnet&lt;br&gt;
-5.FISR: Deep Joint Frame Interpolation and Super-Resolution with A Multi-scale Temporal Loss（做不了）&lt;br&gt;
+RuntimeError: CUDA out of memory. Tried to allocate 280.00 MiB (GPU 0; 23.70 GiB total capacity; 21.96 GiB already allocated; 113.25 MiB free; 22.23 GiB reserved in total by PyTorch)&lt;br&gt;
+*5.FISR: Deep Joint Frame Interpolation and Super-Resolution with A Multi-scale Temporal Loss（做不了）&lt;br&gt;
 Tensorflow 1.13&lt;br&gt;
 NVIDIA TITAN Xp GPU&lt;br&gt;
 github:https://github.com/JihyongOh/FISR&lt;br&gt;
-6.Video Face Super-Resolution with Motion-Adaptive Feedback Cell(不能做, 没代码)&lt;br&gt;
+*6.Video Face Super-Resolution with Motion-Adaptive Feedback Cell(不能做, 没代码)&lt;br&gt;
 one Titan X Pascal GPU.&lt;br&gt;
-7.JSI-GAN: GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video(没代码)&lt;br&gt;
+*7.JSI-GAN: GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video(没代码)&lt;br&gt;
 Tensorflow 1.13&lt;br&gt;
-8.VESR-Net: The Winning Solution to Youku Video Enhancement and Super-Resolution Challenge(无代码)&lt;br&gt;
+*8.VESR-Net: The Winning Solution to Youku Video Enhancement and Super-Resolution Challenge(无代码)&lt;br&gt;
 9.STVUN: Deep Space-Time Video Upsampling Networks(貌似比FISR好)(可以试试)(没有train代码,只有test)&lt;br&gt;
 Pytorch=1.2&lt;br&gt;
 Nvidia Geforce Titan X&lt;br&gt;
 github:https://github.com/JaeYeonKang/STVUN-Pytorch&lt;br&gt;
-10.MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution(没代码)&lt;br&gt;
+10.MuCAN: Multi-Correspondence Aggregation Network for Video Super-Resolution(没train代码，只有test)&lt;br&gt;
 eight NVIDIA GeForce GTX 1080TiGPUs&lt;br&gt;
-11.Video Super-Resolution with Recurrent Structure-Detail Network (RSDN)(试试)&lt;br&gt;
+github:https://github.com/Jia-Research-Lab/Simple-SR&lt;br&gt;
+11.Video Super-Resolution with Recurrent Structure-Detail Network (RSDN)(暂无train带代码)&lt;br&gt;
 pytorch 1.1&lt;br&gt;
 8 Nvidia Tesla V100 GPUs for training.&lt;br&gt;
 github:https://github.com/junpan19/RSDN&lt;br&gt;
-12.&lt;/p&gt;
+12.Neural Supersampling for Real-time Rendering(还未完工)&lt;br&gt;
+github:https://github.com/IMAC-projects/NSRR-PyTorch&lt;br&gt;
+13.Video Restoration with Enhanced Deformable Convolutional Networks(正在尝试)&lt;br&gt;
+8 NVIDIA Titan Xp GPUs&lt;br&gt;
+github:https://github.com/xinntao/EDVR&lt;/p&gt;
 ">视频超分辨率的准备工作</a>
       </div>
       
