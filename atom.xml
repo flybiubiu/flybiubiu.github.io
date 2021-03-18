@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://flybiubiu.github.io</id>
     <title>Gridea</title>
-    <updated>2021-03-18T13:22:10.946Z</updated>
+    <updated>2021-03-18T13:24:18.291Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://flybiubiu.github.io"/>
     <link rel="self" href="https://flybiubiu.github.io/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://flybiubiu.github.io/images/avatar.png</logo>
     <icon>https://flybiubiu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[最小的行程]]></title>
+        <id>https://flybiubiu.github.io/post/WDNwXLB9j/</id>
+        <link href="https://flybiubiu.github.io/post/WDNwXLB9j/">
+        </link>
+        <updated>2021-03-18T13:23:47.000Z</updated>
+        <content type="html"><![CDATA[<p>https://tianchi.aliyun.com/oj/338592228998370026/357527484118536805<br>
+描述<br>
+给定一个二维矩阵，找到从上到下的最小路径。只能向左下，下，右下移动</p>
+<p>所有的元素都是正整数<br>
+矩阵大小<br>
+示例<br>
+样例 1:</p>
+<p>输入:<br>
+1 2 3<br>
+4 5 6<br>
+7 8 9<br>
+输出:<br>
+12</p>
+<p>解释:<br>
+最短的路径为:1-&gt;4-&gt;7, 返回12.</p>
+<p>样例 2:</p>
+<p>输入:<br>
+7 1 12 1<br>
+2 3 4 2<br>
+1 10 2 6<br>
+Output:<br>
+4</p>
+<p>解释:<br>
+最短的路径为:1-&gt;2-&gt;1, 返回 4.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[878. Nth Magical Number]]></title>
         <id>https://flybiubiu.github.io/post/eiwMVQ5jp/</id>
