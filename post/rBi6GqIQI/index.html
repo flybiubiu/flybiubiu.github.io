@@ -9,7 +9,7 @@
 <meta name="description" content="Workhard!">
 <meta name="theme-color" content="#000">
 <title>video SR | Gridea</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1616070378011">
+<link rel="shortcut icon" href="/favicon.ico?v=1616072628930">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -183,7 +183,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -398,6 +398,10 @@ github:https://github.com/xinntao/EDVR</p>
   </div>
   <div class="nav">
     <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="878. Nth Magical Number" href="https://flybiubiu.github.io/post/eiwMVQ5jp/">878. Nth Magical Number</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="878. Nth Magical Number" href="https://flybiubiu.github.io/post/eiwMVQ5jp/">上一篇</a>
       
     </div>
     <div class="nav-next">
@@ -850,6 +854,47 @@ github:https://github.com/xinntao/EDVR</p>
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://flybiubiu.github.io/post/eiwMVQ5jp/"" data-c="
+          &lt;p&gt;HARD&lt;br&gt;
+A positive integer is magical if it is divisible by either a or b.&lt;/p&gt;
+&lt;p&gt;Given the three integers n, a, and b, return the nth magical number. Since the answer may be very large, return it modulo 109 + 7.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;p&gt;Input: n = 1, a = 2, b = 3&lt;br&gt;
+Output: 2&lt;br&gt;
+Example 2:&lt;/p&gt;
+&lt;p&gt;Input: n = 4, a = 2, b = 3&lt;br&gt;
+Output: 6&lt;br&gt;
+Example 3:&lt;/p&gt;
+&lt;p&gt;Input: n = 5, a = 2, b = 4&lt;br&gt;
+Output: 10&lt;br&gt;
+Example 4:&lt;/p&gt;
+&lt;p&gt;Input: n = 3, a = 6, b = 4&lt;br&gt;
+Output: 8&lt;/p&gt;
+&lt;p&gt;Constraints:&lt;/p&gt;
+&lt;p&gt;1 &amp;lt;= n &amp;lt;= 109&lt;br&gt;
+2 &amp;lt;= a, b &amp;lt;= 4 * 104&lt;/p&gt;
+&lt;p&gt;class Solution {&lt;br&gt;
+public:&lt;br&gt;
+int nthMagicalNumber(int n, int a, int b) {&lt;br&gt;
+int MOD = 1e9 + 7;&lt;br&gt;
+int L = a * b / gcd(a, b);&lt;br&gt;
+long long lo = 0;&lt;br&gt;
+long long hi = (long) 1e15;&lt;br&gt;
+while(lo &amp;lt; hi)&lt;br&gt;
+{&lt;br&gt;
+long long mi = lo + (hi - lo) / 2;&lt;br&gt;
+if (mi / a  + mi / b - mi / L &amp;lt; n)&lt;br&gt;
+lo = mi + 1;&lt;br&gt;
+else&lt;br&gt;
+hi = mi;&lt;br&gt;
+}&lt;br&gt;
+return (int)(lo % MOD);&lt;br&gt;
+}&lt;br&gt;
+};&lt;/p&gt;
+">878. Nth Magical Number</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://flybiubiu.github.io/post/rBi6GqIQI/"" data-c="

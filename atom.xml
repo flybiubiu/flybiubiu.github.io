@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://flybiubiu.github.io</id>
     <title>Gridea</title>
-    <updated>2021-03-18T12:26:20.074Z</updated>
+    <updated>2021-03-18T13:03:51.121Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://flybiubiu.github.io"/>
     <link rel="self" href="https://flybiubiu.github.io/atom.xml"/>
@@ -10,6 +10,50 @@
     <logo>https://flybiubiu.github.io/images/avatar.png</logo>
     <icon>https://flybiubiu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[878. Nth Magical Number]]></title>
+        <id>https://flybiubiu.github.io/post/eiwMVQ5jp/</id>
+        <link href="https://flybiubiu.github.io/post/eiwMVQ5jp/">
+        </link>
+        <updated>2021-03-18T12:41:25.000Z</updated>
+        <content type="html"><![CDATA[<p>HARD<br>
+A positive integer is magical if it is divisible by either a or b.</p>
+<p>Given the three integers n, a, and b, return the nth magical number. Since the answer may be very large, return it modulo 109 + 7.</p>
+<p>Example 1:</p>
+<p>Input: n = 1, a = 2, b = 3<br>
+Output: 2<br>
+Example 2:</p>
+<p>Input: n = 4, a = 2, b = 3<br>
+Output: 6<br>
+Example 3:</p>
+<p>Input: n = 5, a = 2, b = 4<br>
+Output: 10<br>
+Example 4:</p>
+<p>Input: n = 3, a = 6, b = 4<br>
+Output: 8</p>
+<p>Constraints:</p>
+<p>1 &lt;= n &lt;= 109<br>
+2 &lt;= a, b &lt;= 4 * 104</p>
+<p>class Solution {<br>
+public:<br>
+int nthMagicalNumber(int n, int a, int b) {<br>
+int MOD = 1e9 + 7;<br>
+int L = a * b / gcd(a, b);<br>
+long long lo = 0;<br>
+long long hi = (long) 1e15;<br>
+while(lo &lt; hi)<br>
+{<br>
+long long mi = lo + (hi - lo) / 2;<br>
+if (mi / a  + mi / b - mi / L &lt; n)<br>
+lo = mi + 1;<br>
+else<br>
+hi = mi;<br>
+}<br>
+return (int)(lo % MOD);<br>
+}<br>
+};</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[video SR]]></title>
         <id>https://flybiubiu.github.io/post/rBi6GqIQI/</id>
