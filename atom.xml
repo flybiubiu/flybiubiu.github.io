@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://flybiubiu.github.io</id>
     <title>Gridea</title>
-    <updated>2021-03-19T14:31:02.102Z</updated>
+    <updated>2021-03-19T15:57:50.436Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://flybiubiu.github.io"/>
     <link rel="self" href="https://flybiubiu.github.io/atom.xml"/>
@@ -137,6 +137,35 @@ Output:<br>
 4</p>
 <p>解释:<br>
 最短的路径为:1-&gt;2-&gt;1, 返回 4.</p>
+<p>class Solution {<br>
+public:<br>
+/**<br>
+* @param matrix:<br>
+* @return: Return the smallest path<br>
+*/<br>
+int smallestPath(vector&lt;vector<int>&gt; &amp;matrix) {<br>
+// Write your code here<br>
+int m = matrix.size();<br>
+int n = matrix[0].size();<br>
+vector<int> dp = matrix[0];<br>
+for(int i = 1;i &lt; m;i ++)<br>
+{<br>
+vector<int> temp(n, 0);<br>
+int prevmin;<br>
+for(int j = 0;j &lt; n;j ++)<br>
+{<br>
+prevmin = dp[j];<br>
+if(j - 1 &gt;= 0)<br>
+prevmin = min(prevmin, dp[j - 1]);<br>
+if(j + 1 &lt; n)<br>
+prevmin = min(prevmin, dp[j + 1]);<br>
+temp[j] = matrix[i][j] + prevmin;<br>
+}<br>
+swap(dp, temp);<br>
+}<br>
+return *min_element(dp.begin(), dp.end());<br>
+}<br>
+};</p>
 ]]></content>
     </entry>
     <entry>

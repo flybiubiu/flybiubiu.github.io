@@ -9,7 +9,7 @@
 <meta name="description" content="Workhard!">
 <meta name="theme-color" content="#000">
 <title>878. Nth Magical Number | Gridea</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1616164259210">
+<link rel="shortcut icon" href="/favicon.ico?v=1616169468043">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -986,6 +986,35 @@ Output:&lt;br&gt;
 4&lt;/p&gt;
 &lt;p&gt;解释:&lt;br&gt;
 最短的路径为:1-&amp;gt;2-&amp;gt;1, 返回 4.&lt;/p&gt;
+&lt;p&gt;class Solution {&lt;br&gt;
+public:&lt;br&gt;
+/**&lt;br&gt;
+* @param matrix:&lt;br&gt;
+* @return: Return the smallest path&lt;br&gt;
+*/&lt;br&gt;
+int smallestPath(vector&amp;lt;vector&lt;int&gt;&amp;gt; &amp;amp;matrix) {&lt;br&gt;
+// Write your code here&lt;br&gt;
+int m = matrix.size();&lt;br&gt;
+int n = matrix[0].size();&lt;br&gt;
+vector&lt;int&gt; dp = matrix[0];&lt;br&gt;
+for(int i = 1;i &amp;lt; m;i ++)&lt;br&gt;
+{&lt;br&gt;
+vector&lt;int&gt; temp(n, 0);&lt;br&gt;
+int prevmin;&lt;br&gt;
+for(int j = 0;j &amp;lt; n;j ++)&lt;br&gt;
+{&lt;br&gt;
+prevmin = dp[j];&lt;br&gt;
+if(j - 1 &amp;gt;= 0)&lt;br&gt;
+prevmin = min(prevmin, dp[j - 1]);&lt;br&gt;
+if(j + 1 &amp;lt; n)&lt;br&gt;
+prevmin = min(prevmin, dp[j + 1]);&lt;br&gt;
+temp[j] = matrix[i][j] + prevmin;&lt;br&gt;
+}&lt;br&gt;
+swap(dp, temp);&lt;br&gt;
+}&lt;br&gt;
+return *min_element(dp.begin(), dp.end());&lt;br&gt;
+}&lt;br&gt;
+};&lt;/p&gt;
 ">最小的行程</a>
       </div>
       
