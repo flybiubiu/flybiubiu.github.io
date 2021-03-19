@@ -9,7 +9,7 @@
 <meta name="description" content="Workhard!">
 <meta name="theme-color" content="#000">
 <title>Gridea</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1616073855738">
+<link rel="shortcut icon" href="/favicon.ico?v=1616159863993">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -166,7 +166,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-count">5</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -228,13 +228,31 @@
       
         
           
+            
+      
+        
+          
+            
+      
+        
+          
         
       
         
       
-      <a class="cloud-tag" href="https://flybiubiu.github.io/tag/YLY6hxLgR/" rel="2">tianchi(jiuzhang)</a>
+      <a class="cloud-tag" href="https://flybiubiu.github.io/tag/YLY6hxLgR/" rel="4">tianchi(jiuzhang)</a>
     
       
+      
+        
+          
+        
+          
+            
+      
+        
+          
+        
       
         
           
@@ -252,9 +270,19 @@
       
         
       
-      <a class="cloud-tag" href="https://flybiubiu.github.io/tag/hbd1BzuND/" rel="1">leetcode</a>
+      <a class="cloud-tag" href="https://flybiubiu.github.io/tag/hbd1BzuND/" rel="2">leetcode</a>
     
       
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
       
         
           
@@ -552,6 +580,90 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://flybiubiu.github.io/post/wddrarhBZ/"" data-c="
+          &lt;p&gt;https://leetcode-cn.com/problems/uncommon-words-from-two-sentences/&lt;br&gt;
+https://tianchi.aliyun.com/oj/338592228998370026/357527484118536804&lt;br&gt;
+We are given two sentences A and B.  (A sentence is a string of space separated words.  Each word consists only of lowercase letters.)&lt;/p&gt;
+&lt;p&gt;A word is uncommon if it appears exactly once in one of the sentences, and does not appear in the other sentence.&lt;/p&gt;
+&lt;p&gt;Return a list of all uncommon words.&lt;/p&gt;
+&lt;p&gt;You may return the list in any order.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;p&gt;Input: A = &amp;quot;this apple is sweet&amp;quot;, B = &amp;quot;this apple is sour&amp;quot;&lt;br&gt;
+Output: [&amp;quot;sweet&amp;quot;,&amp;quot;sour&amp;quot;]&lt;br&gt;
+Example 2:&lt;/p&gt;
+&lt;p&gt;Input: A = &amp;quot;apple apple&amp;quot;, B = &amp;quot;banana&amp;quot;&lt;br&gt;
+Output: [&amp;quot;banana&amp;quot;]&lt;/p&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;p&gt;0 &amp;lt;= A.length &amp;lt;= 200&lt;br&gt;
+0 &amp;lt;= B.length &amp;lt;= 200&lt;br&gt;
+A and B both contain only spaces and lowercase letters.&lt;/p&gt;
+&lt;p&gt;来源：力扣（LeetCode）&lt;br&gt;
+链接：https://leetcode-cn.com/problems/uncommon-words-from-two-sentences&lt;br&gt;
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。&lt;/p&gt;
+">884. Uncommon Words from Two Sentences</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://flybiubiu.github.io/post/ylb68pyVD/"" data-c="
+          &lt;p&gt;https://tianchi.aliyun.com/oj/338592228998370026/357527484118536803&lt;br&gt;
+描述&lt;br&gt;
+给两个排序的数组。 从两个数组中各取取一个数，这两个数之和需要小于或等于k， 需要找到两数之和最大的索引组合。返回一对包含两个列表的索引。如果有多个两数之和相等的索引答案，你应该选择第一个数组索引最小的索引对。在此前提下，你应该选择第二个数组索引最小的索引对。&lt;/p&gt;
+&lt;p&gt;1）两数的总和&amp;lt;= k&lt;/p&gt;
+&lt;p&gt;2）总和是最大的&lt;/p&gt;
+&lt;p&gt;3）两个数组索引都尽量最小&lt;/p&gt;
+&lt;p&gt;如果你无法找到答案，你应返回一个空列表[]。&lt;/p&gt;
+&lt;p&gt;You can assume that the numbers in arrays are all positive integer or zero.&lt;/p&gt;
+&lt;p&gt;示例&lt;br&gt;
+示例1&lt;/p&gt;
+&lt;p&gt;输入:&lt;br&gt;
+A = [1, 4, 6, 9], B = [1, 2, 3, 4], K = 9&lt;br&gt;
+输出:&lt;br&gt;
+[2, 2]&lt;/p&gt;
+&lt;p&gt;示例2:&lt;/p&gt;
+&lt;p&gt;输入:&lt;br&gt;
+A = [1, 4, 6, 8], B = [1, 2, 3, 5], K = 12&lt;br&gt;
+输出:&lt;br&gt;
+[2, 3]&lt;/p&gt;
+&lt;p&gt;class Solution {&lt;br&gt;
+public:&lt;br&gt;
+/**&lt;br&gt;
+* @param A: an integer sorted array&lt;br&gt;
+* @param B: an integer sorted array&lt;br&gt;
+* @param K: an integer&lt;br&gt;
+* @return: return a pair of index&lt;br&gt;
+*/&lt;br&gt;
+vector&lt;int&gt; optimalUtilization(vector&lt;int&gt; &amp;amp;A, vector&lt;int&gt; &amp;amp;B, int K) {&lt;br&gt;
+// write your code here&lt;br&gt;
+int la = A.size();&lt;br&gt;
+int lb = B.size();&lt;br&gt;
+int max = -1;&lt;br&gt;
+vector&lt;int&gt; c;&lt;br&gt;
+for (int i = 0;i &amp;lt; la;i ++)&lt;br&gt;
+{&lt;br&gt;
+for(int j = 0;j &amp;lt; lb;j ++)&lt;br&gt;
+{&lt;br&gt;
+if(A[i] + B[j] &amp;lt;= K &amp;amp;&amp;amp; A[i] + B[j] &amp;gt; max)&lt;br&gt;
+{&lt;br&gt;
+max = A[i] + B[j];&lt;br&gt;
+if(c.size() != 0)&lt;br&gt;
+{&lt;br&gt;
+c.pop_back();&lt;br&gt;
+c.pop_back();&lt;br&gt;
+}&lt;br&gt;
+c.push_back(i);&lt;br&gt;
+c.push_back(j);&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;            }
+        }
+    }
+    return c;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;};&lt;/p&gt;
+">最佳利用率</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://flybiubiu.github.io/post/WDNwXLB9j/"" data-c="

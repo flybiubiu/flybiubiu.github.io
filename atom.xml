@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://flybiubiu.github.io</id>
     <title>Gridea</title>
-    <updated>2021-03-18T13:24:18.291Z</updated>
+    <updated>2021-03-19T13:17:49.574Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://flybiubiu.github.io"/>
     <link rel="self" href="https://flybiubiu.github.io/atom.xml"/>
@@ -10,6 +10,96 @@
     <logo>https://flybiubiu.github.io/images/avatar.png</logo>
     <icon>https://flybiubiu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[884. Uncommon Words from Two Sentences]]></title>
+        <id>https://flybiubiu.github.io/post/wddrarhBZ/</id>
+        <link href="https://flybiubiu.github.io/post/wddrarhBZ/">
+        </link>
+        <updated>2021-03-19T13:16:56.000Z</updated>
+        <content type="html"><![CDATA[<p>https://leetcode-cn.com/problems/uncommon-words-from-two-sentences/<br>
+https://tianchi.aliyun.com/oj/338592228998370026/357527484118536804<br>
+We are given two sentences A and B.  (A sentence is a string of space separated words.  Each word consists only of lowercase letters.)</p>
+<p>A word is uncommon if it appears exactly once in one of the sentences, and does not appear in the other sentence.</p>
+<p>Return a list of all uncommon words.</p>
+<p>You may return the list in any order.</p>
+<p></p>
+<p>Example 1:</p>
+<p>Input: A = &quot;this apple is sweet&quot;, B = &quot;this apple is sour&quot;<br>
+Output: [&quot;sweet&quot;,&quot;sour&quot;]<br>
+Example 2:</p>
+<p>Input: A = &quot;apple apple&quot;, B = &quot;banana&quot;<br>
+Output: [&quot;banana&quot;]</p>
+<p>Note:</p>
+<p>0 &lt;= A.length &lt;= 200<br>
+0 &lt;= B.length &lt;= 200<br>
+A and B both contain only spaces and lowercase letters.</p>
+<p>来源：力扣（LeetCode）<br>
+链接：https://leetcode-cn.com/problems/uncommon-words-from-two-sentences<br>
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最佳利用率]]></title>
+        <id>https://flybiubiu.github.io/post/ylb68pyVD/</id>
+        <link href="https://flybiubiu.github.io/post/ylb68pyVD/">
+        </link>
+        <updated>2021-03-19T13:15:21.000Z</updated>
+        <content type="html"><![CDATA[<p>https://tianchi.aliyun.com/oj/338592228998370026/357527484118536803<br>
+描述<br>
+给两个排序的数组。 从两个数组中各取取一个数，这两个数之和需要小于或等于k， 需要找到两数之和最大的索引组合。返回一对包含两个列表的索引。如果有多个两数之和相等的索引答案，你应该选择第一个数组索引最小的索引对。在此前提下，你应该选择第二个数组索引最小的索引对。</p>
+<p>1）两数的总和&lt;= k</p>
+<p>2）总和是最大的</p>
+<p>3）两个数组索引都尽量最小</p>
+<p>如果你无法找到答案，你应返回一个空列表[]。</p>
+<p>You can assume that the numbers in arrays are all positive integer or zero.</p>
+<p>示例<br>
+示例1</p>
+<p>输入:<br>
+A = [1, 4, 6, 9], B = [1, 2, 3, 4], K = 9<br>
+输出:<br>
+[2, 2]</p>
+<p>示例2:</p>
+<p>输入:<br>
+A = [1, 4, 6, 8], B = [1, 2, 3, 5], K = 12<br>
+输出:<br>
+[2, 3]</p>
+<p>class Solution {<br>
+public:<br>
+/**<br>
+* @param A: an integer sorted array<br>
+* @param B: an integer sorted array<br>
+* @param K: an integer<br>
+* @return: return a pair of index<br>
+*/<br>
+vector<int> optimalUtilization(vector<int> &amp;A, vector<int> &amp;B, int K) {<br>
+// write your code here<br>
+int la = A.size();<br>
+int lb = B.size();<br>
+int max = -1;<br>
+vector<int> c;<br>
+for (int i = 0;i &lt; la;i ++)<br>
+{<br>
+for(int j = 0;j &lt; lb;j ++)<br>
+{<br>
+if(A[i] + B[j] &lt;= K &amp;&amp; A[i] + B[j] &gt; max)<br>
+{<br>
+max = A[i] + B[j];<br>
+if(c.size() != 0)<br>
+{<br>
+c.pop_back();<br>
+c.pop_back();<br>
+}<br>
+c.push_back(i);<br>
+c.push_back(j);</p>
+<pre><code>            }
+        }
+    }
+    return c;
+}
+</code></pre>
+<p>};</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[最小的行程]]></title>
         <id>https://flybiubiu.github.io/post/WDNwXLB9j/</id>
