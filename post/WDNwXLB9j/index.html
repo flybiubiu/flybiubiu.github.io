@@ -9,7 +9,7 @@
 <meta name="description" content="Workhard!">
 <meta name="theme-color" content="#000">
 <title>最小的行程 | Gridea</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1616159863993">
+<link rel="shortcut icon" href="/favicon.ico?v=1616164259210">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -866,9 +866,16 @@ Output: [&amp;quot;banana&amp;quot;]&lt;/p&gt;
 &lt;p&gt;0 &amp;lt;= A.length &amp;lt;= 200&lt;br&gt;
 0 &amp;lt;= B.length &amp;lt;= 200&lt;br&gt;
 A and B both contain only spaces and lowercase letters.&lt;/p&gt;
-&lt;p&gt;来源：力扣（LeetCode）&lt;br&gt;
-链接：https://leetcode-cn.com/problems/uncommon-words-from-two-sentences&lt;br&gt;
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。&lt;/p&gt;
+&lt;p&gt;unordered_map&amp;lt;string, int&amp;gt; mapp;&lt;br&gt;
+A = A + &amp;quot; &amp;quot; + B;&lt;br&gt;
+istringstream str(A);&lt;br&gt;
+string s;&lt;br&gt;
+vector&lt;string&gt; ans;&lt;br&gt;
+while(str &amp;gt;&amp;gt; s) ++mapp[s];&lt;br&gt;
+for(auto m:mapp)&lt;br&gt;
+if(m.second == 1)&lt;br&gt;
+ans.push_back(m.first);&lt;br&gt;
+return ans;&lt;/p&gt;
 ">884. Uncommon Words from Two Sentences</a>
       </div>
       
