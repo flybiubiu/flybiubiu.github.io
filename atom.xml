@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://flybiubiu.github.io</id>
-    <title>Gridea</title>
-    <updated>2021-03-19T15:57:50.436Z</updated>
+    <title>flybiubiu</title>
+    <updated>2021-03-29T05:14:05.757Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://flybiubiu.github.io"/>
     <link rel="self" href="https://flybiubiu.github.io/atom.xml"/>
-    <subtitle>Workhard!</subtitle>
+    <subtitle>别想了, 那个人不是你！</subtitle>
     <logo>https://flybiubiu.github.io/images/avatar.png</logo>
     <icon>https://flybiubiu.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
+    <rights>All rights reserved 2021, flybiubiu</rights>
     <entry>
         <title type="html"><![CDATA[884. Uncommon Words from Two Sentences]]></title>
         <id>https://flybiubiu.github.io/post/wddrarhBZ/</id>
